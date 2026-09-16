@@ -1,4 +1,4 @@
-# AI Smart Study Assistant
+# AI Smart Study Assistant 
 
 A smart study assistant that helps students stay organized, manage their study tasks, and decide what to focus on next. It combines task management with personalized recommendations and AI-powered study advice.
 
