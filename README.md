@@ -10,6 +10,24 @@ The AI Smart Study Assistant brings these things together in one application. It
 
 The application also uses OpenAI to provide personalized study advice based on the student's current tasks and learning needs.
 
+## Screenshots
+
+### Home Page
+
+![AI Smart Study Assistant - Home Page](screenshots/home.png)
+
+### Study Dashboard
+
+![Study Dashboard](screenshots/dashboard.png)
+
+### AI Study Advice
+
+![AI Study Advice](screenshots/ai-advice.png)
+
+### Recommended Tasks
+
+![Recommended Tasks](screenshots/recommendations.png)
+
 ## Features
 
 - Create and manage study tasks
@@ -45,7 +63,7 @@ The main recommendation logic runs locally using TF-IDF, keyword matching, and t
 
 OpenAI is used to generate personalized study advice based on the student's current tasks and study needs.
 
-The AI can help suggest what to focus on and provide practical guidance for approaching study tasks.
+The AI can suggest what to focus on and provide practical guidance for approaching study tasks.
 
 The AI functionality is kept separate from the core recommendation system, which handles task ranking using TF-IDF, keyword matching, and task-based scoring.
 
@@ -89,6 +107,8 @@ ai-smart-study-assistant/
 │   ├── requirements.txt
 │   └── .gitignore
 │
+├── database/
+│
 ├── frontend/
 │   ├── src/
 │   │   ├── app/
@@ -97,6 +117,12 @@ ai-smart-study-assistant/
 │   ├── package.json
 │   ├── package-lock.json
 │   └── .gitignore
+│
+├── screenshots/
+│   ├── home.png
+│   ├── dashboard.png
+│   ├── ai-advice.png
+│   └── recommendations.png
 │
 ├── .gitignore
 └── README.md
@@ -126,7 +152,7 @@ pip install -r requirements.txt
 Create a .env file inside the backend directory and add your own configuration:
 
 OPENAI_API_KEY=your_openai_api_key
-DATABASE_URL=your_database_connection
+MYSQL_PASSWORD=your_mysql_password
 
 Never commit your .env file, API keys, database passwords, or other secrets to GitHub.
 
@@ -162,7 +188,7 @@ From the backend directory, run:
 
 pytest
 
-The current test suite covers API functionality and error-handling scenarios.
+The test suite covers API functionality and error-handling scenarios.
 
 Security
 
